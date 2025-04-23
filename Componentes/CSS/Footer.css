@@ -1,0 +1,131 @@
+footer {
+    background-color: #222831;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;    
+    padding: 30px 0px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 150px;
+    border-right: 3px solid #393E46;
+}
+
+.contact-form h3{
+    padding: 0px 0px 10px 0px;    
+    text-transform: uppercase;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form-group label {    
+    font-size: 15px;
+}
+
+.form-group input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: #393E46;
+    font-family: 'Roboto';
+}
+
+textarea::placeholder{
+    color: white;
+}
+
+.form-group input::placeholder {
+    color: white;
+}
+
+.submit-btn {
+    background-color: #00ADB5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.submit-btn:hover{
+    background-color: #222831;
+    color: #00ADB5;
+    border: 1px solid white;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px 150px;
+}
+
+.img-footer{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #393E46;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #393E46;
+    padding-top: 20px;  
+    font-size: 13px;
+}
+
+@media(max-width: 600px){
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 0px 30px;
+        border-right: none;
+        border-bottom: 3px solid #393E46;
+    }
+
+    .footer-info {
+        width: 100%;
+        padding: 0px 30px;
+        margin-top: 30px;
+    }
+
+}

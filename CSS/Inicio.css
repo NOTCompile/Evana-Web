@@ -1,0 +1,48 @@
+.contenedorInicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-bg {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+        url(/Assets/Logo/fiesta-gente1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje{
+    justify-items: center;
+    
+}
+
+.mensaje p{
+    font-size: 80px;
+    color: white;    
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.mensaje a{
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid #FF4081;
+    border-radius: 20px;
+    color: white;
+    background-color: #0a0908;
+}
+
+.mensaje a:hover{
+    background-color: #FF4081;
+}
+
