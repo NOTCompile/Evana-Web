@@ -20,6 +20,7 @@ main{
     display: flex;
     padding: 30px;
     border-bottom: 1px solid #393E46;
+    align-items: center;
 }
 
 .card-horizontal img{
@@ -38,13 +39,18 @@ main{
 
 .card-texto h3{
     text-align: center;
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 25px;    
 }
 
 .card-texto p{
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
+}
+
+.card-texto li{
+    text-align: justify;
+    font-size: 20px;
+    margin-left: 30px;   
 }
 
 @media(max-width: 1300px){
