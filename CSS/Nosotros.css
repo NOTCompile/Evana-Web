@@ -67,8 +67,8 @@ main {
 }
 
 .clientes img {
-    height: 150px;
-    width: auto;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
 }
 
