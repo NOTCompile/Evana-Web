@@ -20,18 +20,20 @@ main {
 }
 
 .mis-vis {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: 300px;
-    align-items: center;
+    height: auto;
+    place-items: center;
 }
 
 .content-mis-vis {
-    height: 250px;
-    width: 50%;
-    padding: 20px 150px;
+    padding: 0px 50px;
     text-align: center;
-    border-right: 1px outset black;
+}
+
+.content-mis-vis:first-child {
+    border-right: 2px solid #272727;
 }
 
 .content-mis-vis h3 {
@@ -43,32 +45,31 @@ main {
     font-size: 20px;
 }
 
-.text{
-    width: 100%;   
-    padding: 30px; 
+.text {
+    width: 100%;
+    padding: 30px;
     text-align: center;
     font-size: 30px;
 }
 
 .clientes {
-    padding: 20px 250px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 30px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 65px;
 }
 
-.colaborador {    
+.colaborador {
     display: flex;
-    flex-direction: column;
-    width: 150px;
+    flex-direction: column;    
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .clientes img {
-    height: 200px;
-    width: 200px;
+    height: 150px;    
+    width: 150px;    
     border-radius: 100%;
 }
 
@@ -76,4 +77,15 @@ main {
     padding: 20px 0px;
     font-size: 20px;
     text-align: center;
+}
+
+@media (min-width: 1200px){
+    .clientes{
+        gap: 150px;        
+    }
+    
+    .clientes img {        
+        height: 250px;
+        width: 250px;
+    }
 }

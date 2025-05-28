@@ -3,7 +3,6 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #0a0908;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     padding: 0px 7%;
     display: flex;
@@ -11,41 +10,41 @@ header {
     justify-content: space-between;
     z-index: 1000;
     text-transform: uppercase;
+    background: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(50px);
+    text-decoration: none;
 }
 
-header .logo {
-    font-weight: bolder;
-    font-size: 25px;
-    color: #0a0908;
+.logo img {
+    width: auto;
+    height: 50px;
 }
 
-header .logo img {
-    height: 54px;
-    padding: 8px;
+.navbar a {
+    text-decoration: none;
 }
 
-header .navbar ul {
+.navbar ul {
     list-style: none;
 }
 
-header .navbar ul li {
+.navbar ul li {
     position: relative;
     float: left;
 }
 
-header .navbar ul li a {
+.navbar ul li a {
     font-size: 20px;
     padding: 20px;
     color: #FF4081;
     display: block;
 }
 
-header .navbar ul li a:hover {
-    background: #0a0908;
-    color: #fff;
+.navbar ul li a:hover {
+    background: #fff;
 }
 
-header .navbar ul li ul {
+.navbar ul li ul {
     position: absolute;
     left: 0;
     width: 200px;
@@ -53,12 +52,17 @@ header .navbar ul li ul {
     display: none;
 }
 
-header .navbar ul li ul li {
+.navbar ul li ul li {
     width: 100%;
     border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-header .navbar ul li:hover>ul {
+.navbar ul li ul li a:hover {
+    color: #fff;
+    background-color: #FF4081;
+}
+
+.navbar ul li:hover>ul {
     display: initial;
 }
 
@@ -74,20 +78,12 @@ header label {
 }
 
 /* Responsive */
-@media(max-width: 630px) {
-    header .logo img {
-        height: 100px;
-    }
-
-    header {
-        padding: 20px;
-    }
-
+@media(max-width: 768px) {
     header label {
         display: initial;
     }
 
-    header .navbar {
+    .navbar {
         position: absolute;
         display: none;
         top: 100%;
@@ -95,13 +91,25 @@ header label {
         right: 0px;
     }
 
-    header .navbar ul li {
+    .navbar ul li {
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        backdrop-filter: blur(50px);
+    }
+
+    .navbar ul li ul {
+        position: relative;
         width: 100%;
     }
 
-    header .navbar ul li ul {
-        position: relative;
-        width: 100%;
+    .navbar ul li a:hover {
+        color: #fff;
+        background-color: #FF4081;
+    }
+
+    .navbar ul li ul li a:hover {
+        color: #fff;
+        background-color: #FF4081;
     }
 
     #menu-bar:checked~.navbar {

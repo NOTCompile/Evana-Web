@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/CSS/Global.css">
-    <link rel="stylesheet" href="/Componentes/CSS/Navbar.css">
-    <link rel="stylesheet" href="/Componentes/CSS/Footer.css">
-    <link rel="stylesheet" href="/CSS/Inicio.css">
     <link rel="stylesheet" href="/CSS/Servicio_Alquiler.css">
 
     <title>EVANA</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <a href="index.html" class="logo">
             <img src="/Assets/Logo/Evana_Navbar.PNG" alt="Logo-Evana">
         </a>
@@ -39,17 +36,19 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <div class="alquiler">
             <h1>Alquiler de Equipos y Mobiliario</h1>
             <p>Haz que tu evento luzca espectacular desde el primer momento.
                 Ofrecemos una amplia gama de elementos en alquiler para que cada celebración tenga estilo, comodidad y
                 un toque de distinción:</p>
+
             <div class="card-horizontal">
                 <img src="/Assets/Img/A_Alquiler1.png" alt="">
                 <div class="card-texto">
                     <h3>Limosinas y carruajes</h3>
-                    <p>Hermoso transporte para ideales entradas glamorosas, sesiones de fotos o momentos especiales.</p>
+                    <p>Hermoso transporte para ideales entradas glamorosas, sesiones de fotos o momentos especiales.
+                    </p>
                     <li>Limosinas modernas con iluminación LED, sonido envolvente y aire acondicionado. Ideales para
                         cumpleaños, bodas, quince años o grados.</li>
                     <li>Carruajes temáticos: perfectos para eventos de estilo vintage o fantasía (princesas, épocas
@@ -65,7 +64,8 @@
                     <li>Sillas Tiffany, Avant Garde, plegables o infantiles</li>
                     <li>Mesas redondas, rectangulares y altas</li>
                     <li>Muebles lounge, puff, barras y mesas tipo cóctel</li>
-                    <p>Todos los muebles están impecables y pueden personalizarse con fundas, caminos de mesa, manteles
+                    <p>Todos los muebles están impecables y pueden personalizarse con fundas, caminos de mesa,
+                        manteles
                         y centros decorativos.</p>
                 </div>
                 <img src="/Assets/Img/A_Alquiler2.png" alt="">
@@ -77,17 +77,19 @@
                     <p>Equipos perfectos para eventos al aire libre, protegiendo del clima sin perder estética.</p>
                     <li>Toldos blancos o transparentes (proteger del sol o la lluvia sin perder estética).</li>
                     <li>Pérgolas decorativas con luces, telas o flores colgantes.</li>
-                    <li>Estructuras metálicas o modulares para escenarios, entradas, photo booths, techos o áreas VIP.
+                    <li>Estructuras metálicas o modulares para escenarios, entradas, photo booths, techos o áreas
+                        VIP.
                     </li>
                     <p>Incluye montaje, desmontaje y asesoría técnica para adaptar al espacio disponible.</p>
                 </div>
             </div>
+
             <p>Todo nuestro equipo está en óptimas condiciones, limpio, seguro y listo para hacer de tu evento una
                 experiencia inolvidable.</p>
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-container">
             <div class="contact-form">
                 <h3>Contáctanos</h3>
@@ -109,7 +111,7 @@
                         <label for="dni">Asunto</label>
                         <textarea name="" id="" placeholder="Ingrese el asunto de la MEGA-Fiesta"></textarea>
                     </div>
-                    <button href="#" class="submit-btn">Enviar</button>
+                    <a href="/Agradecimiento.html" class="submit-btn">Enviar</a>
                 </form>
             </div>
 
@@ -120,6 +122,11 @@
                 <p>Calle Rodriguez Ballón 207 - A, Miraflores, Arequipa, Perú</p>
                 <p>+51 963 023 181s</p>
                 <p>Fiesta_Evana@evana.com</p>
+                <div class="terms_and_conditions">
+                    <a href="Terminos_cond.html" target="_blank">
+                        Terminos y condiciones
+                    </a>
+                </div>
                 <div class="social-icons">
                     <a><img src="/Assets/Iconos/wsp.png" /> </a>
                     <a><img src="/Assets/Iconos/facebook.png" /></a>

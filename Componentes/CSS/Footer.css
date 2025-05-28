@@ -1,25 +1,51 @@
-footer {
+.footer {
     background-color: #222831;
     color: #fff;
-    padding: 20px 0px;
+
 }
 
 .footer-container {
     width: 100%;
-    display: flex;    
-    padding: 30px 0px;
+    display: grid;
+    place-items: center;
+    width: 100%;    
+    grid-template:
+        "contact-form"
+        "footer-info"
+        "copyright"
+    ;
+
+    .contact-form {
+        grid-area: contact-form;
+    }
+
+    .footer-info {
+        grid-area: footer-info;
+    }
+
+    .copyright {
+        grid-area: copyright;
+    }
+
+    @media (min-width:992px) {
+        grid-template:
+            "contact-form footer-info"
+            "copyright copyright" /
+            1fr 1fr
+        ;
+    }
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding: 0px 150px;
-    border-right: 3px solid #393E46;
+    width: 100%;
+    padding: 30px 70px;
+    border-bottom: 3px solid #393E46;
 }
 
-.contact-form h3{
-    padding: 0px 0px 10px 0px;    
+.contact-form h3 {
+    padding: 0px 0px 10px 0px;
     text-transform: uppercase;
 }
 
@@ -29,11 +55,12 @@ footer {
     margin-bottom: 25px;
 }
 
-.form-group label {    
+.form-group label {
     font-size: 15px;
 }
 
-.form-group input, textarea {
+.form-group input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid whitesmoke;
@@ -42,7 +69,7 @@ footer {
     font-family: 'Roboto';
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: white;
 }
 
@@ -60,27 +87,30 @@ textarea::placeholder{
     margin-bottom: 10px;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
     background-color: #222831;
     color: #00ADB5;
     border: 1px solid white;
 }
 
+/*Información*/
 .footer-info {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding: 0px 150px;
+    width: 100%;
+    padding: 30px 70px;
 }
 
-.img-footer{
-    width: 50%;
+.img-footer {
+    width: 100%;
     margin-bottom: 20px;
+    justify-self: center;
+    padding: 50px;
 }
 
 .footer-info p {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -105,27 +135,13 @@ textarea::placeholder{
     width: 100%;
     text-align: center;
     border-top: 1px solid #393E46;
-    padding-top: 20px;  
+    padding-top: 20px;
     font-size: 13px;
 }
 
-@media(max-width: 600px){
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
+@media (min-width:992px) {
     .contact-form {
-        width: 100%;
-        padding: 0px 30px;
-        border-right: none;
-        border-bottom: 3px solid #393E46;
+        border-right: 3px solid #393E46;
+        border-bottom: none;
     }
-
-    .footer-info {
-        width: 100%;
-        padding: 0px 30px;
-        margin-top: 30px;
-    }
-
 }

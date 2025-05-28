@@ -1,63 +1,75 @@
-main{
-    margin-top: 64px;
+main {
+    margin-top: 70px;
 }
 
-.alquiler{
+.alquiler {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
     text-align: center;
 }
 
-.alquiler p{
+.alquiler p {
     margin: 30px;
-    font-size: 20px;    
+    font-size: 20px;
 }
 
-.card-horizontal{
+.card-horizontal {
+    width: 100%;
     display: flex;
-    padding: 30px;
+    flex-direction: column;
+    padding: 20px;
     border-bottom: 1px solid #393E46;
-    align-items: center;
+    align-items: center;    
 }
 
-.card-horizontal img{
-    width: 50%;
-    height: 300px;    
+.card-horizontal img {
+    width: auto;
+    height: 100%;
+    padding: 30px;
 }
 
-.card-texto{
+.card-texto {
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.card-texto h3{
+.card-texto h3 {
     text-align: center;
-    font-size: 25px;    
+    font-size: 25px;
 }
 
-.card-texto p{
+.card-texto p {
     text-align: justify;
     font-size: 20px;
 }
 
-.card-texto li{
+.card-texto li {
     text-align: justify;
     font-size: 20px;
-    margin-left: 30px;   
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-@media(max-width: 1300px){
+@media(min-width: 992px) {
     .card-horizontal{
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .card-horizontal img{
+        max-width: 400px;
+        padding: 10px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .alquiler{
+        padding: 0px 150px;
+    }
+    .card-horizontal img{
         width: 100%;
-        height: 500px;
     }
 }

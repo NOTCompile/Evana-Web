@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/CSS/Global.css">
-    <link rel="stylesheet" href="/Componentes/CSS/Navbar.css">
-    <link rel="stylesheet" href="/Componentes/CSS/Footer.css">
-    <link rel="stylesheet" href="/CSS/Inicio.css">
     <link rel="stylesheet" href="/CSS/Contacto.css">
 
     <title>EVANA</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <a href="index.html" class="logo">
             <img src="/Assets/Logo/Evana_Navbar.PNG" alt="Logo-Evana">
         </a>
@@ -39,24 +36,20 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <div class="contacto">
             <h1>Puedes ubicarnos en la siguiente dirección:</h1>
-            <div class="mapa">           
-            <iframe 
-                frameborder="0" 
-                scrolling="no" 
-                marginheight="0" 
-                marginwidth="0" 
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Calle%20Rodriguez%20Ballon%20207+(Evana)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                <a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a>
-            </iframe>
+            <div class="mapa">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Calle%20Rodriguez%20Ballon%20207+(Evana)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    <a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a>
+                </iframe>
             </div>
             <p>Dirección: Calle Rodriguez Ballon 207 - A, Arequipa, Perú</p>
         </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="footer-container">
             <div class="contact-form">
                 <h3>Contáctanos</h3>
@@ -71,28 +64,35 @@
                     </div>
                     <div class="form-group">
                         <label for="telefono">Número de teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de contacto" required>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de contacto"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="dni">Asunto</label>
                         <textarea name="" id="" placeholder="Ingrese el asunto de la MEGA-Fiesta"></textarea>
                     </div>
-                    <button href="#" class="submit-btn">Enviar</button>
+                    <a href="/Agradecimiento.html" class="submit-btn">Enviar</a>
                 </form>
             </div>
 
             <div class="footer-info">
                 <img src="/Assets/Logo/Evana_Navbar.PNG" class="img-footer">
-                <p>Tu empresa de confianza para la organización de cualquier MEGA-Evento Inolvidable, alquiler de equipos y decoración.</p>
+                <p>Tu empresa de confianza para la organización de cualquier MEGA-Evento Inolvidable, alquiler de
+                    equipos y decoración.</p>
                 <p>Calle Rodriguez Ballón 207 - A, Miraflores, Arequipa, Perú</p>
                 <p>+51 963 023 181s</p>
                 <p>Fiesta_Evana@evana.com</p>
+                <div class="terms_and_conditions">
+                    <a href="Terminos_cond.html" target="_blank">
+                        Terminos y condiciones
+                    </a>
+                </div>
                 <div class="social-icons">
                     <a><img src="/Assets/Iconos/wsp.png" /> </a>
                     <a><img src="/Assets/Iconos/facebook.png" /></a>
                     <a><img src="/Assets/Iconos/instagram.png" /></i></a>
                 </div>
-            </div>            
+            </div>
         </div>
         <div class="copyright">
             <p>&copy; 2025 Evana S.A.C. - Todos los derechos reservados.</p>
